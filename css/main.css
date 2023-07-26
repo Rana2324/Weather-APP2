@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: url("../img/bg-image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1170;
+  width: 100%;
+  padding: 20px;
+}
+
+.search_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.search_area input,
+.search_area button {
+  padding: 15px;
+  border: none;
+  outline: none;
+  margin-right: 5px;
+  border-radius: 10px 0px;
+  font-size: 15px;
+  background: white;
+}
+
+.search_area button {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+span {
+  color: red;
+}
+
+.resultsArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.resultsArea .result {
+  background-color: rgb(208 208 213 / 80%);
+  padding: 20px;
+  text-align: center;
+  width: 30%;
+  margin: 10px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.resultsArea .result .weather_details .tempUnit {
+  color: black;
+}
+
+.resultsArea .result_history {
+  background-color: rgb(208 208 213 / 80%);
+  padding: 20px;
+  width: 40%;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.resultsArea .result_history .history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.resultsArea .result_history .history .history_info {
+  font-weight: 600;
+  background-color: rgba(240, 248, 255, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0px;
+}
+
+.resultsArea button {
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: red;
+}

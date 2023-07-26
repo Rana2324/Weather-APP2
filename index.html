@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search_area">
+        <input
+          type="text"
+          id="search_inp"
+          placeholder="Enter your city name"
+        /><button id="searchBtn">Search</button>
+      </div>
+      <div class="resultsArea">
+        <div class="result">
+          <h3>Your Search Result</h3>
+          <img src="" alt="" id="condition_img" />
+          <p id="cityName"></p>
+          <span id="condition"></span>
+          <div class="weather_details">
+            Temp: <span class="temp"></span><span class="tempUnit">°C</span>, Pressure:
+            <span class="pressure"></span>Pa, Humidity:
+            <span class="humidity"></span>%
+          </div>
+          <button id="convertTemp">Convert Temp</button>
+        </div>
+        <div class="result_history">
+          <h3>Your Search History</h3>
+          <div class="historyList">
+            <!-- Search history div from js  -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/main.js"></script>
+</html>

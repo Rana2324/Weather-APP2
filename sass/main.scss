@@ -1,0 +1,72 @@
+@import "./_common.scss";
+
+.search_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0px;
+  input,
+  button {
+    padding: 15px;
+    border: none;
+    outline: none;
+    margin-right: 5px;
+    border-radius: 10px 0px;
+    font-size: 15px;
+    background: rgb(255, 255, 255);
+  }
+  button {
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+span{
+  color: rgb(255, 0, 0);
+}
+.resultsArea {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  .result {
+    background-color: rgb(208 208 213 / 80%);
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    margin: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    .weather_details{
+      .tempUnit{
+        color:black
+      }
+    }
+  }
+  .result_history {
+    background-color: rgb(208 208 213 / 80%);
+    padding: 20px;
+    width: 40%;
+    margin: 10px;
+    border-radius: 10px;
+    .history{
+      display: flex;
+      .history_info{
+        font-weight: 600;
+        background-color: rgba(240, 248, 255, 0.5);
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px 0px;
+      }
+    }
+  }
+  button{
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: rgb(255, 0, 0);
+  }
+}
